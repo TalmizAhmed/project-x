@@ -29,7 +29,7 @@ export default async function decorate(fieldDiv, fieldJson) {
   input.max = input.max || 100;
   // create a wrapper div to provide the min/max and current value
   const div = document.createElement('div');
-  div.className = 'range-widget-wrapper';
+  div.className = 'range-widget-wrapper decorated';
   input.after(div);
   const hover = document.createElement('span');
   hover.className = 'range-bubble';
@@ -48,7 +48,5 @@ export default async function decorate(fieldDiv, fieldJson) {
     updateBubble(e.target, div);
   });
   updateBubble(input, div);
-  // as a best practice add a custom css class to apply custom styling
-  fieldDiv.classList.add('decorated');
   return fieldDiv;
 }
