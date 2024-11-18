@@ -185,6 +185,14 @@ main .form label.required::after {
     padding-inline-start: 5px;
 }
 
+.field-trip-warning-text > p {
+    text-align: center;
+    border-top: 1px solid #00af0d;
+    border-bottom: 1px solid #00af0d;
+    border-left: none;
+    border-right: none;
+}
+
 main .form form p,
 main .form form .repeat-wrapper,
 main .form form .field-wrapper {
@@ -569,16 +577,4 @@ main .form form:not(.edit-mode) .captcha-wrapper{
 
 .field-steward-form {
     grid-template-columns: 1fr 3fr;
-}
-
-.wizard-menu-items {
-    grid-column: 1;
-}
-
-.field-trip-warning-text > p {
-    text-align: center;
-    border-top: 1px solid #00af0d;
-    border-bottom: 1px solid #00af0d;
-    border-left: none;
-    border-right: none;
 }
