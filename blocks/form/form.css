@@ -566,3 +566,19 @@ main form .wizard > .current-wizard-step.panel-wrapper:last-of-type ~ .wizard-bu
 main .form form:not(.edit-mode) .captcha-wrapper{
     display: none ;
 }
+
+.field-steward-form {
+    grid-template-columns: 1fr 3fr;
+}
+
+.wizard-menu-items {
+    grid-column: 1;
+}
+
+.field-trip-warning-text > p {
+    text-align: center;
+    border-top: 1px solid #00af0d;
+    border-bottom: 1px solid #00af0d;
+    border-left: none;
+    border-right: none;
+}
